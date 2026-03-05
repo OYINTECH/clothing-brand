@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ELARA | Gym Wear</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="header">
+    <div class="logo"><a href="index.html">ELARA</a></div>
+
+    <nav class="nav">
+      <a href="shop.html">Shop</a>
+      <a href="shop.html">Women</a>
+      <a href="shop.html">Gym Sets</a>
+      <a href="lookbook.html">Athletes</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+
+    <button class="cartBtn" id="cartBtn">Bag (<span id="cartCount">0</span>)</button>
+  </header>
+
+  <section class="hero">
+    <div class="heroText">
+      <h1>Train Strong. Move Free.</h1>
+      <p>Premium gym wear designed for performance, comfort, and confidence.</p>
+      <a class="btn" href="shop.html">Shop New Arrivals</a>
+    </div>
+  </section>
+
+  <section class="section">
+    <h2>New Arrivals</h2>
+    <p style="color:var(--muted); max-width:720px;">
+      Discover leggings, sports bras, gym sets, and training essentials built for movement.
+    </p>
+    <div style="margin-top:16px;">
+      <a class="btn" href="shop.html">Go to Shop</a>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <p>© <span id="year"></span> ELARA. All rights reserved.</p>
+  </footer>
+
+  <!-- Cart Modal (same on all pages) -->
+  <div class="cartModal" id="cartModal">
+    <div class="cartBox">
+      <div class="cartHeader">
+        <h3>Your Bag</h3>
+        <button class="closeBtn" id="closeBtn">X</button>
+      </div>
+      <div id="cartItems" class="cartItems"></div>
+      <div class="cartFooter">
+        <div>Total: $<span id="cartTotal">0</span></div>
+        <button class="btn" id="checkoutBtn">Checkout (demo)</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
