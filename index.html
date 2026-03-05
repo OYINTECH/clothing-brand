@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Your Brand | Streetwear</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="header">
+    <div class="logo">YOURBRAND</div>
+    <nav class="nav">
+      <a href="#shop">Shop</a>
+      <a href="#lookbook">Lookbook</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <button class="cartBtn" id="cartBtn">Cart (<span id="cartCount">0</span>)</button>
+  </header>
+
+  <section class="hero">
+    <div class="heroText">
+      <h1>New Drop. Clean Fit.</h1>
+      <p>Premium streetwear built for everyday confidence.</p>
+      <a class="btn" href="#shop">Shop Now</a>
+    </div>
+  </section>
+
+  <section id="shop" class="section">
+    <h2>Featured Products</h2>
+    <div class="grid" id="productGrid"></div>
+  </section>
+
+  <section id="lookbook" class="section alt">
+    <h2>Lookbook</h2>
+    <p>Drop your best pictures here (or add brand photos later).</p>
+    <div class="lookbook">
+      <div class="lbCard">Outfit 1</div>
+      <div class="lbCard">Outfit 2</div>
+      <div class="lbCard">Outfit 3</div>
+    </div>
+  </section>
+
+  <section id="about" class="section">
+    <h2>About Your Brand</h2>
+    <p>
+      Tell your story: what your brand stands for, why you started, and what makes your pieces different.
+    </p>
+  </section>
+
+  <section id="contact" class="section alt">
+    <h2>Contact</h2>
+    <p>For orders & collabs, send a message:</p>
+    <form class="form" name="contact" method="POST" data-netlify="true">
+      <input type="hidden" name="form-name" value="contact" />
+      <input name="name" placeholder="Your name" required />
+      <input name="email" type="email" placeholder="Your email" required />
+      <textarea name="message" placeholder="Your message..." required></textarea>
+      <button class="btn" type="submit">Send</button>
+    </form>
+  </section>
+
+  <footer class="footer">
+    <p>© <span id="year"></span> YOURBRAND. All rights reserved.</p>
+  </footer>
+
+  <div class="cartModal" id="cartModal">
+    <div class="cartBox">
+      <div class="cartHeader">
+        <h3>Your Cart</h3>
+        <button class="closeBtn" id="closeBtn">X</button>
+      </div>
+      <div id="cartItems" class="cartItems"></div>
+      <div class="cartFooter">
+        <div>Total: $<span id="cartTotal">0</span></div>
+        <button class="btn" id="checkoutBtn">Checkout (demo)</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
